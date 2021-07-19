@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css.css"/>
+    <title>Calculator</title>
+</head>
+<body>    
+    <!-- <p id="time"> </p> 
+    <button onclick="names()">Click để xem giờ</button>    
+    <div class="content">        
+            <input type="text" name="num" style="margin:10px;" id="num-1">
+            <input type="text" name="num" style="margin:10px;" id="num-2">
+            <p id="kq"> </p>                            
+    </div><br/>
+    <button onclick="kq()" id="tinh">Tính</button>   <p></p> -->
+    <div class="content-grid">
+        <!-- <div class="heading">
+            <span>
+                <i class="fas fa-history">
+                    <div id="history"></div>
+                </i>
+            </span>
+            <span>
+                <i class="fas fa-calculator"></i>
+                <i class="fas fa-calculator"></i>
+                <i class="fas fa-calculator"></i>
+            </span>           
+        </div> -->
+        <div id="result"><div id="res_1" style="height: 50%;box-sizing: border-box;"></div>    
+            <div id="res_2" style="height: 50% ; box-sizing: border-box;"></div>          
+        </div>
+            <div class="calc">
+                <div class="number">                    
+                    <button class="btn" value="9">9</button> <!--value in lên màn hình giá trị của btn-->
+                    <button class="btn" value="8">8</button>
+                    <button class="btn" value="7">7</button>
+                    <button class="btn" value="6">6</button>
+                    <button class="btn" value="5">5</button>
+                    <button class="btn" value="4">4</button>
+                    <button class="btn" value="3">3</button>
+                    <button class="btn" value="2">2</button>                
+                    <button class="btn" value="1">1</button>
+                    <button class="btn" onclick="clean()">AC</button> <!--onclick sự kiện, hàm sẽ hoạt động khi click vào btn-->
+                    <button class="btn" onclick="undo()">DEL</button>
+                    <button class="btn" value="0">0</button>     
+                </div>    
+                <div class="operation">
+                    <button class="btn" value="^2"style="font-size: 20px;" id="luythua" onclick="pows()">x<sup>2</sup></button>
+                    <button class="btn" style="font-size: 25px;" onclick="so_am()">+/-</button>
+                    <button class="btn" value="+"style="font-size: 25px;">+</button>
+                    <button class="btn" value="-"style="font-size: 25px;">-</button>
+                    <button class="btn" value="*"style="font-size: 25px;">*</button>
+                    <button class="btn" value="/"style="font-size: 25px;">/</button>
+                    <button class="btn" value=","style="font-size: 25px;">,</button>
+                    <button class="btn" style="font-size: 25px;" onclick="equal()">=</button>                  
+                </div>
+        </div>    
+    </div>   
+    <!-- <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="JS.js" ></script>     
+</body>
+</html>
