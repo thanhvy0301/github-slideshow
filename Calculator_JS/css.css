@@ -1,0 +1,87 @@
+ body{
+    height: 1000px;
+    font-family:monospace;
+    box-sizing: border-box;
+    background-color: rgb(160, 231, 93); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(221, 117, 216) , rgb(248, 234, 103));
+}
+html{
+    --bg:white;
+    --color-text:black;
+    --color-border:#b4b0b0;
+    --btn-active:#bcbfc2;
+}
+#time{
+    width: 260px; 
+    height: 50px; 
+    box-sizing: border-box; 
+    border: solid 1px black;
+    text-align: center;
+    padding:5px;
+    background-color: rgb(245, 245, 245);
+}
+.content{
+    width: 200px;
+    height: 150px;    
+    margin-top: 50px;
+    box-sizing: border-box;
+    text-align: center;        
+}
+.calc{
+    width: 450px;
+    height: 350px;
+    display: inline-block;
+    border-top: 1px solid var(--color-border);
+    box-sizing: content-box;   
+    display: grid;
+    grid-template-columns: 2.3fr 1.2fr;     
+}
+.number{ 
+    border-top: 1px solid var(--color-border);   
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(4,1fr);   
+    border-right: 1px solid var(--color-border);     
+}
+.operation{
+    display: grid;
+    border-top: 1px solid var(--color-border);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+}
+.operation .btn{
+    color: rgb(43, 101, 189);    
+}
+.content-grid{
+    display: grid;
+    padding: 5rem;
+    max-width: 300px;
+    grid-template-rows: 1fr 5fr;
+}
+.btn{
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-text);
+}
+.btn:hover{
+    background-color: gainsboro;
+}
+#result{
+    border-top: 1px solid var(--color-border);
+    background-color: rgb(238, 238, 238);
+    height: 75px;    
+    margin-top: 11px;    
+    text-align: right;    
+    font-family:cursive;
+}
+#res_1{
+    font-size: 25px;
+    padding-top: 8px;
+}
+#res_2{
+    font-size: 28px;
+}
